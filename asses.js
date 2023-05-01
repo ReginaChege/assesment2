@@ -14,7 +14,7 @@
 //     ];
 function allBooks(books){
 for(title in books){
-    if (!title===title)
+    if (title===title)
     return title
 }
 
@@ -63,7 +63,7 @@ getBooksByAuthor(author)
 // book's isAvailable property to true. If the book is not found in the library, the function
 // should return a message indicating that the book does not belong to the library.
 
-function returnBook(title,changes)
+function returnBook(title){
     if(!title===title){
         return "book not found"
     }
@@ -74,3 +74,6 @@ function returnBook(title,changes)
         return "does not belong to the library"
     }
 
+}
+   
+console.log(returnBook(title))
